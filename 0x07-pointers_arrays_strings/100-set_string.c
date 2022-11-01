@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* set_string - set str to char
+* set_string - set pointer to char
 * @s: pointer to pointer to a char
 * @to: address of match
 * Return: void
