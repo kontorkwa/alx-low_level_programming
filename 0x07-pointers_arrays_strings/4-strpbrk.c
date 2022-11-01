@@ -9,7 +9,7 @@ char *_strpbrk(char *s, char *accept)
 {
 	unsigned int counter;
 
-	for (; *s != '\0'; s++)
+	for (s = 0; *s != '\0'; s++)
 	{
 		for (counter = 0; accept[counter] != '\0'; counter++)
 		{
