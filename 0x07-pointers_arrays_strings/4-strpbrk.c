@@ -1,20 +1,21 @@
 #include "main.h"
 /**
-*
+* _strpbrk- searches a str for any of a set of bytes
+* @s: char pointer
+* @accept: char pointer
+* Return: 0
 */
-
 char *_strpbrk(char *s, char *accept)
 {
-unsigned int a, b;
-for (a = 0; s[a]; a++)
-{
-for (b = 0; accept[b]; b++)
-{
-if (s[a] == accept[b])
-break;
-}
-if (accept[b])
-return (s + a);
-}
-return (0);
+	unsigned int counter;
+
+	for (; *s != '\0'; s++)
+	{
+		for (counter = 0; accept[counter] != '\0'; counetr++)
+		{
+			if (*s == accept[counter])
+				return (s);
+		}
+	}
+	retun(0);
 }
